@@ -35,7 +35,7 @@ export const Register: React.FC = () => {
                         <Textbox placeholder="Last Name" onChange={e => setField({...field, lastName: e.target.value})}/>
                         <Textbox placeholder="Email" onChange={e => setField({...field, email: e.target.value})}/>
                         <Textbox placeholder="Password" type="password" onChange={e => setField({...field, password: e.target.value})}/>
-                        <button type="submit" className="rounded-md shadow-md bg-blue-400 text-white my-2 py-2 px-5">Signup</button>
+                        <button type="submit" className="rounded-md shadow-md bg-blue-400 text-white my-2 py-2 px-5">Sign up</button>
                       </form>
                   </Card>
                 </div>

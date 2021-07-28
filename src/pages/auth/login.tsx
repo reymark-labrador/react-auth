@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import { Card, Textbox } from '../../components';
 
 export const Login: React.FC = () => {
@@ -31,6 +31,7 @@ export const Login: React.FC = () => {
                         <Textbox placeholder="Email" onChange={e => setField({...field, email: e.target.value})}/>
                         <Textbox placeholder="Password" type="password" onChange={e => setField({...field, password: e.target.value})}/>
                         <button type="submit" className="rounded-md shadow-md bg-blue-400 text-white my-2 py-2 px-5">Login</button>
+                        <Link to="/register" className="text-xs mx-2">Sign up</Link>
                       </form>
                   </Card>
                 </div>
